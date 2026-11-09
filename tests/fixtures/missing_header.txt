@@ -1,0 +1,17 @@
+EPISODE LOGLINE: No episode number header.
+CONTINUITY NOTES: None.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. ROOM – DAY
+Scene start: 00:00.00
+Scene end: 00:10.00
+
+Actions and dialogue:
+
+**ALICE (Angry):**
+Start: (00:02.50) | End: (00:04.00)
+"I can't believe you did this."
+
+--- SCRIPT END ---

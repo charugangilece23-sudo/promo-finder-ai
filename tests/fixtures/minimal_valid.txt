@@ -1,0 +1,26 @@
+EPISODE NUMBER: Episode 1
+EPISODE LOGLINE: A minimal test transcript.
+CONTINUITY NOTES: None.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. ROOM – DAY
+Scene start: 00:00.00
+Scene end: 00:10.00
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:02.00)
+A static shot of a room.
+
+**ALICE (Angry):**
+Start: (00:02.50) | End: (00:04.00)
+"I can't believe you did this."
+
+**BOB (Calm):**
+Start: (00:04.50) | End: (00:06.00)
+"It had to be done."
+
+--- SCRIPT END ---

@@ -1,0 +1,1364 @@
+{
+  "schema_version": "1.0",
+  "episodes": [
+    {
+      "number": 1,
+      "source_id": "1671703",
+      "path": "data/input/episode-001-Episode 1671703.txt",
+      "logline": "Lady Juliana arrives at the cathedral in her late mother's bridal gown, only to suffer the ultimate betrayal when her fiancé Gerald abandons her at the altar for her cruel sister Clarissa with her family's full blessing.",
+      "continuity_notes": "First episode of the series. Establishes Juliana's humiliation and abandonment by her betrothed, Gerald, and her noble family in favor of her sister, Clarissa.",
+      "duration": 138.0,
+      "scenes": [
+        {
+          "number": 1,
+          "heading": "INT. CATHEDRAL – DAY",
+          "start": 0.0,
+          "end": 138.0,
+          "start_raw": "00:00.00",
+          "end_raw": "02:18.00"
+        }
+      ],
+      "events": [
+        {
+          "id": "E001:000",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 0.0,
+          "end": 4.8,
+          "start_raw": "00:00.00",
+          "end_raw": "00:04.80",
+          "text": "Symmetrical framing on the heavy church doors as they slowly part, pushing in slightly as Juliana stands framed in the light, dressed in an elegant white silk gown.",
+          "norm_text": "Symmetrical framing on the heavy church doors as they slowly part, pushing in slightly as Juliana stands framed in the light, dressed in an elegant white silk gown."
+        },
+        {
+          "id": "E001:001",
+          "kind": "action",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 1.0,
+          "end": 4.8,
+          "start_raw": "00:01.00",
+          "end_raw": "00:04.80",
+          "text": "Juliana pauses at the threshold, her expression bright with joyful anticipation, wearing her mother's vintage gown and an oval pendant necklace.",
+          "norm_text": "Juliana pauses at the threshold, her expression bright with joyful anticipation, wearing her mother's vintage gown and an oval pendant necklace."
+        },
+        {
+          "id": "E001:002",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 4.8,
+          "end": 6.8,
+          "start_raw": "00:04.80",
+          "end_raw": "00:06.80",
+          "text": "High wide tracking shot following behind Juliana as she steps into the grand cathedral nave, facing the distant altar flanked by seated guests.",
+          "norm_text": "High wide tracking shot following behind Juliana as she steps into the grand cathedral nave, facing the distant altar flanked by seated guests."
+        },
+        {
+          "id": "E001:003",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 6.8,
+          "end": 9.8,
+          "start_raw": "00:06.80",
+          "end_raw": "00:09.80",
+          "text": "Close-up on Juliana's face as her warm smile begins to falter into confusion.",
+          "norm_text": "Close-up on Juliana's face as her warm smile begins to falter into confusion."
+        },
+        {
+          "id": "E001:004",
+          "kind": "action",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 7.2,
+          "end": 9.8,
+          "start_raw": "00:07.20",
+          "end_raw": "00:09.80",
+          "text": "Juliana's eyes widen slightly in bewilderment as she notices something amiss at the altar.",
+          "norm_text": "Juliana's eyes widen slightly in bewilderment as she notices something amiss at the altar."
+        },
+        {
+          "id": "E001:005",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 9.8,
+          "end": 11.0,
+          "start_raw": "00:09.80",
+          "end_raw": "00:11.00",
+          "text": "Medium profile shot at the altar showing Gerald in his dark tailcoat holding the gloved hand of the Lady in Gold Gown, with Juliana visible walking down the distant aisle.",
+          "norm_text": "Medium profile shot at the altar showing Gerald in his dark tailcoat holding the gloved hand of the Lady in Gold Gown, with Juliana visible walking down the distant aisle."
+        },
+        {
+          "id": "E001:006",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 11.0,
+          "end": 13.2,
+          "start_raw": "00:11.00",
+          "end_raw": "00:13.20",
+          "text": "Medium shot as Juliana stops midway down the aisle, confronted by a haughty matriarch in black velvet stepping into the foreground.",
+          "norm_text": "Medium shot as Juliana stops midway down the aisle, confronted by a haughty matriarch in black velvet stepping into the foreground."
+        },
+        {
+          "id": "E001:007",
+          "kind": "dialogue",
+          "speaker_raw": "MATRIARCH",
+          "modifiers": [],
+          "delivery": [
+            "Cold",
+            "Commanding"
+          ],
+          "start": 11.3,
+          "end": 13.1,
+          "start_raw": "00:11.30",
+          "end_raw": "00:13.10",
+          "text": "You should turn around, Juliana.",
+          "norm_text": "You should turn around, Juliana."
+        },
+        {
+          "id": "E001:008",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Confused",
+            "Breathless"
+          ],
+          "start": 13.5,
+          "end": 14.3,
+          "start_raw": "00:13.50",
+          "end_raw": "00:14.30",
+          "text": "Why?",
+          "norm_text": "Why?"
+        },
+        {
+          "id": "E001:009",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 14.3,
+          "end": 17.8,
+          "start_raw": "00:14.30",
+          "end_raw": "00:17.80",
+          "text": "Over-the-shoulder medium close-up past the Matriarch to Juliana, looking past her toward the altar.",
+          "norm_text": "Over-the-shoulder medium close-up past the Matriarch to Juliana, looking past her toward the altar."
+        },
+        {
+          "id": "E001:010",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Desperate",
+            "Unbelieving"
+          ],
+          "start": 15.5,
+          "end": 17.5,
+          "start_raw": "00:15.50",
+          "end_raw": "00:17.50",
+          "text": "Gerald is waiting for me.",
+          "norm_text": "Gerald is waiting for me."
+        },
+        {
+          "id": "E001:011",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 17.8,
+          "end": 20.5,
+          "start_raw": "00:17.80",
+          "end_raw": "00:20.50",
+          "text": "Close-up on the Matriarch wearing an ornate tiara and sapphire jewelry, gazing down with merciless disdain.",
+          "norm_text": "Close-up on the Matriarch wearing an ornate tiara and sapphire jewelry, gazing down with merciless disdain."
+        },
+        {
+          "id": "E001:012",
+          "kind": "dialogue",
+          "speaker_raw": "MATRIARCH",
+          "modifiers": [],
+          "delivery": [
+            "Blunt",
+            "Unforgiving"
+          ],
+          "start": 18.0,
+          "end": 19.4,
+          "start_raw": "00:18.00",
+          "end_raw": "00:19.40",
+          "text": "Not anymore.",
+          "norm_text": "Not anymore."
+        },
+        {
+          "id": "E001:013",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 20.5,
+          "end": 23.6,
+          "start_raw": "00:20.50",
+          "end_raw": "00:23.60",
+          "text": "Close-up on Juliana's stricken face as the weight of the words sinks in.",
+          "norm_text": "Close-up on Juliana's stricken face as the weight of the words sinks in."
+        },
+        {
+          "id": "E001:014",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Trembling",
+            "Pleading"
+          ],
+          "start": 21.8,
+          "end": 23.5,
+          "start_raw": "00:21.80",
+          "end_raw": "00:23.50",
+          "text": "What do you mean?",
+          "norm_text": "What do you mean?"
+        },
+        {
+          "id": "E001:015",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 23.6,
+          "end": 25.8,
+          "start_raw": "00:23.60",
+          "end_raw": "00:25.80",
+          "text": "Medium shot of the Matriarch gesturing dismissively toward the altar.",
+          "norm_text": "Medium shot of the Matriarch gesturing dismissively toward the altar."
+        },
+        {
+          "id": "E001:016",
+          "kind": "dialogue",
+          "speaker_raw": "MATRIARCH",
+          "modifiers": [],
+          "delivery": [
+            "Dismissive"
+          ],
+          "start": 23.8,
+          "end": 25.5,
+          "start_raw": "00:23.80",
+          "end_raw": "00:25.50",
+          "text": "Look for yourself.",
+          "norm_text": "Look for yourself."
+        },
+        {
+          "id": "E001:017",
+          "kind": "action",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 25.6,
+          "end": 29.8,
+          "start_raw": "00:25.60",
+          "end_raw": "00:29.80",
+          "text": "Juliana walks forward past the Matriarch, her breath hitching as she approaches the altar steps, looking up in shock.",
+          "norm_text": "Juliana walks forward past the Matriarch, her breath hitching as she approaches the altar steps, looking up in shock."
+        },
+        {
+          "id": "E001:018",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 25.8,
+          "end": 29.8,
+          "start_raw": "00:25.80",
+          "end_raw": "00:29.80",
+          "text": "Medium front tracking shot moving backward ahead of Juliana as she advances down the center aisle.",
+          "norm_text": "Medium front tracking shot moving backward ahead of Juliana as she advances down the center aisle."
+        },
+        {
+          "id": "E001:019",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 29.8,
+          "end": 32.8,
+          "start_raw": "00:29.80",
+          "end_raw": "00:32.80",
+          "text": "Panning shot across the seated wedding guests whispering and casting judging glances from the wooden pews.",
+          "norm_text": "Panning shot across the seated wedding guests whispering and casting judging glances from the wooden pews."
+        },
+        {
+          "id": "E001:020",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 32.8,
+          "end": 33.7,
+          "start_raw": "00:32.80",
+          "end_raw": "00:33.70",
+          "text": "Low-angle shot from behind Juliana looking up at Gerald and the Lady in Gold Gown standing proudly before the altar.",
+          "norm_text": "Low-angle shot from behind Juliana looking up at Gerald and the Lady in Gold Gown standing proudly before the altar."
+        },
+        {
+          "id": "E001:021",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 33.7,
+          "end": 35.3,
+          "start_raw": "00:33.70",
+          "end_raw": "00:35.30",
+          "text": "Close-up on Juliana's trembling lips and shocked, tearful blue eyes.",
+          "norm_text": "Close-up on Juliana's trembling lips and shocked, tearful blue eyes."
+        },
+        {
+          "id": "E001:022",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Shaken",
+            "Whispering"
+          ],
+          "start": 33.8,
+          "end": 35.0,
+          "start_raw": "00:33.80",
+          "end_raw": "00:35.00",
+          "text": "Gerald?",
+          "norm_text": "Gerald?"
+        },
+        {
+          "id": "E001:023",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Heartbroken"
+          ],
+          "start": 35.4,
+          "end": 37.7,
+          "start_raw": "00:35.40",
+          "end_raw": "00:37.70",
+          "text": "Why are you holding her hand?",
+          "norm_text": "Why are you holding her hand?"
+        },
+        {
+          "id": "E001:024",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 36.5,
+          "end": 39.0,
+          "start_raw": "00:36.50",
+          "end_raw": "00:39.00",
+          "text": "Close-up insert of Gerald's fingers firmly interlocked with the white-gloved hand of the Lady in Gold Gown.",
+          "norm_text": "Close-up insert of Gerald's fingers firmly interlocked with the white-gloved hand of the Lady in Gold Gown."
+        },
+        {
+          "id": "E001:025",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 39.0,
+          "end": 41.5,
+          "start_raw": "00:39.00",
+          "end_raw": "00:41.50",
+          "text": "Close-up on the Lady in Gold Gown beaming with cruel triumph.",
+          "norm_text": "Close-up on the Lady in Gold Gown beaming with cruel triumph."
+        },
+        {
+          "id": "E001:026",
+          "kind": "dialogue",
+          "speaker_raw": "LADY IN GOLD GOWN",
+          "modifiers": [],
+          "delivery": [
+            "Gloating",
+            "Smug"
+          ],
+          "start": 39.1,
+          "end": 41.2,
+          "start_raw": "00:39.10",
+          "end_raw": "00:41.20",
+          "text": "Because he is marrying me.",
+          "norm_text": "Because he is marrying me."
+        },
+        {
+          "id": "E001:027",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 41.5,
+          "end": 43.9,
+          "start_raw": "00:41.50",
+          "end_raw": "00:43.90",
+          "text": "Close-up on Juliana as tears spill over her eyelashes.",
+          "norm_text": "Close-up on Juliana as tears spill over her eyelashes."
+        },
+        {
+          "id": "E001:028",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Gasping",
+            "Devastated"
+          ],
+          "start": 41.7,
+          "end": 43.1,
+          "start_raw": "00:41.70",
+          "end_raw": "00:43.10",
+          "text": "No...",
+          "norm_text": "No..."
+        },
+        {
+          "id": "E001:029",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 43.9,
+          "end": 46.8,
+          "start_raw": "00:43.90",
+          "end_raw": "00:46.80",
+          "text": "Wide profile shot showing Juliana standing below the altar platform, looking up at Gerald and her sister.",
+          "norm_text": "Wide profile shot showing Juliana standing below the altar platform, looking up at Gerald and her sister."
+        },
+        {
+          "id": "E001:030",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Outraged",
+            "Accusing"
+          ],
+          "start": 46.8,
+          "end": 50.0,
+          "start_raw": "00:46.80",
+          "end_raw": "00:50.00",
+          "text": "You knew this before I walked through those doors!",
+          "norm_text": "You knew this before I walked through those doors!"
+        },
+        {
+          "id": "E001:031",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 46.8,
+          "end": 50.4,
+          "start_raw": "00:46.80",
+          "end_raw": "00:50.40",
+          "text": "Close-up on Juliana clutching her chest, her sorrow turning into burning outrage.",
+          "norm_text": "Close-up on Juliana clutching her chest, her sorrow turning into burning outrage."
+        },
+        {
+          "id": "E001:032",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 50.4,
+          "end": 52.0,
+          "start_raw": "00:50.40",
+          "end_raw": "00:52.00",
+          "text": "Medium shot of Gerald standing stoic and impassive next to the smug Lady in Gold Gown.",
+          "norm_text": "Medium shot of Gerald standing stoic and impassive next to the smug Lady in Gold Gown."
+        },
+        {
+          "id": "E001:033",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 52.0,
+          "end": 54.6,
+          "start_raw": "00:52.00",
+          "end_raw": "00:54.60",
+          "text": "Close-up on Juliana's hands desperately clenching fistfuls of her white dress fabric.",
+          "norm_text": "Close-up on Juliana's hands desperately clenching fistfuls of her white dress fabric."
+        },
+        {
+          "id": "E001:034",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Choking on Tears"
+          ],
+          "start": 52.8,
+          "end": 54.6,
+          "start_raw": "00:52.80",
+          "end_raw": "00:54.60",
+          "text": "You let me come here...",
+          "norm_text": "You let me come here..."
+        },
+        {
+          "id": "E001:035",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 54.6,
+          "end": 57.6,
+          "start_raw": "00:54.60",
+          "end_raw": "00:57.60",
+          "text": "Close-up on Juliana's tear-streaked face as she shakes with grief.",
+          "norm_text": "Close-up on Juliana's tear-streaked face as she shakes with grief."
+        },
+        {
+          "id": "E001:036",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Crushed",
+            "Shaking"
+          ],
+          "start": 54.7,
+          "end": 56.9,
+          "start_raw": "00:54.70",
+          "end_raw": "00:56.90",
+          "text": "You let me dress in my mother's gown...",
+          "norm_text": "You let me dress in my mother's gown..."
+        },
+        {
+          "id": "E001:037",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Crying Out"
+          ],
+          "start": 57.0,
+          "end": 60.0,
+          "start_raw": "00:57.00",
+          "end_raw": "01:00.00",
+          "text": "You let me believe I was walking toward my husband!",
+          "norm_text": "You let me believe I was walking toward my husband!"
+        },
+        {
+          "id": "E001:038",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 57.6,
+          "end": 60.1,
+          "start_raw": "00:57.60",
+          "end_raw": "01:00.10",
+          "text": "Medium shot on Gerald stepping forward, cold and indifferent, with the Lady in Gold Gown lingering in soft focus behind him.",
+          "norm_text": "Medium shot on Gerald stepping forward, cold and indifferent, with the Lady in Gold Gown lingering in soft focus behind him."
+        },
+        {
+          "id": "E001:039",
+          "kind": "dialogue",
+          "speaker_raw": "THE FORMER GROOM",
+          "modifiers": [],
+          "delivery": [
+            "Cold",
+            "Callous"
+          ],
+          "start": 60.1,
+          "end": 61.8,
+          "start_raw": "01:00.10",
+          "end_raw": "01:01.80",
+          "text": "I changed my mind.",
+          "norm_text": "I changed my mind."
+        },
+        {
+          "id": "E001:040",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 60.1,
+          "end": 63.0,
+          "start_raw": "01:00.10",
+          "end_raw": "01:03.00",
+          "text": "Tight close-up on Gerald's hardened profile as he glances down.",
+          "norm_text": "Tight close-up on Gerald's hardened profile as he glances down."
+        },
+        {
+          "id": "E001:041",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 63.0,
+          "end": 66.0,
+          "start_raw": "01:03.00",
+          "end_raw": "01:06.00",
+          "text": "Extreme close-up on Juliana's furious, weeping face.",
+          "norm_text": "Extreme close-up on Juliana's furious, weeping face."
+        },
+        {
+          "id": "E001:042",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Betrayed",
+            "Piercing"
+          ],
+          "start": 63.4,
+          "end": 65.6,
+          "start_raw": "01:03.40",
+          "end_raw": "01:05.60",
+          "text": "You swore you loved me!",
+          "norm_text": "You swore you loved me!"
+        },
+        {
+          "id": "E001:043",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 66.0,
+          "end": 68.8,
+          "start_raw": "01:06.00",
+          "end_raw": "01:08.80",
+          "text": "Close-up on the Lady in Gold Gown smiling condescendingly.",
+          "norm_text": "Close-up on the Lady in Gold Gown smiling condescendingly."
+        },
+        {
+          "id": "E001:044",
+          "kind": "dialogue",
+          "speaker_raw": "LADY IN GOLD GOWN",
+          "modifiers": [],
+          "delivery": [
+            "Mocking"
+          ],
+          "start": 66.5,
+          "end": 68.8,
+          "start_raw": "01:06.50",
+          "end_raw": "01:08.80",
+          "text": "People change their minds, sister.",
+          "norm_text": "People change their minds, sister."
+        },
+        {
+          "id": "E001:045",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 68.8,
+          "end": 72.4,
+          "start_raw": "01:08.80",
+          "end_raw": "01:12.40",
+          "text": "Medium profile shot of the Lady in Gold Gown turning her head subtly toward Gerald with satisfied malice.",
+          "norm_text": "Medium profile shot of the Lady in Gold Gown turning her head subtly toward Gerald with satisfied malice."
+        },
+        {
+          "id": "E001:046",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Horrified"
+          ],
+          "start": 69.1,
+          "end": 70.4,
+          "start_raw": "01:09.10",
+          "end_raw": "01:10.40",
+          "text": "And you knew?",
+          "norm_text": "And you knew?"
+        },
+        {
+          "id": "E001:047",
+          "kind": "dialogue",
+          "speaker_raw": "LADY IN GOLD GOWN",
+          "modifiers": [],
+          "delivery": [
+            "Unapologetic",
+            "Cheerful"
+          ],
+          "start": 70.6,
+          "end": 72.1,
+          "start_raw": "01:10.60",
+          "end_raw": "01:12.10",
+          "text": "Of course I knew.",
+          "norm_text": "Of course I knew."
+        },
+        {
+          "id": "E001:048",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 72.4,
+          "end": 74.6,
+          "start_raw": "01:12.40",
+          "end_raw": "01:14.60",
+          "text": "Close-up on Juliana, stunned by the callous depth of the conspiracy.",
+          "norm_text": "Close-up on Juliana, stunned by the callous depth of the conspiracy."
+        },
+        {
+          "id": "E001:049",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Trembling"
+          ],
+          "start": 73.1,
+          "end": 74.3,
+          "start_raw": "01:13.10",
+          "end_raw": "01:14.30",
+          "text": "How long?",
+          "norm_text": "How long?"
+        },
+        {
+          "id": "E001:050",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 74.6,
+          "end": 79.0,
+          "start_raw": "01:14.60",
+          "end_raw": "01:19.00",
+          "text": "Medium two-shot of the Lady in Gold Gown and Gerald looking together down at Juliana.",
+          "norm_text": "Medium two-shot of the Lady in Gold Gown and Gerald looking together down at Juliana."
+        },
+        {
+          "id": "E001:051",
+          "kind": "dialogue",
+          "speaker_raw": "LADY IN GOLD GOWN",
+          "modifiers": [],
+          "delivery": [
+            "Cruel",
+            "Poised"
+          ],
+          "start": 75.0,
+          "end": 78.5,
+          "start_raw": "01:15.00",
+          "end_raw": "01:18.50",
+          "text": "Long enough to know he was never going to marry you.",
+          "norm_text": "Long enough to know he was never going to marry you."
+        },
+        {
+          "id": "E001:052",
+          "kind": "action",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 79.0,
+          "end": 81.0,
+          "start_raw": "01:19.00",
+          "end_raw": "01:21.00",
+          "text": "Juliana turns abruptly toward the first row of pews, where her elderly father sits gripping an ornate brass cane.",
+          "norm_text": "Juliana turns abruptly toward the first row of pews, where her elderly father sits gripping an ornate brass cane."
+        },
+        {
+          "id": "E001:053",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 79.0,
+          "end": 81.4,
+          "start_raw": "01:19.00",
+          "end_raw": "01:21.40",
+          "text": "Close-up on the father's hand tightly gripping the gold curved handle of his walking cane.",
+          "norm_text": "Close-up on the father's hand tightly gripping the gold curved handle of his walking cane."
+        },
+        {
+          "id": "E001:054",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Desperate"
+          ],
+          "start": 80.1,
+          "end": 81.2,
+          "start_raw": "01:20.10",
+          "end_raw": "01:21.20",
+          "text": "Father...",
+          "norm_text": "Father..."
+        },
+        {
+          "id": "E001:055",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Begging"
+          ],
+          "start": 81.4,
+          "end": 83.6,
+          "start_raw": "01:21.40",
+          "end_raw": "01:23.60",
+          "text": "Tell them this is a mistake.",
+          "norm_text": "Tell them this is a mistake."
+        },
+        {
+          "id": "E001:056",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 81.4,
+          "end": 83.7,
+          "start_raw": "01:21.40",
+          "end_raw": "01:23.70",
+          "text": "Wide shot showing Juliana dropping to her knees beside her seated father, pleading with him.",
+          "norm_text": "Wide shot showing Juliana dropping to her knees beside her seated father, pleading with him."
+        },
+        {
+          "id": "E001:057",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 83.7,
+          "end": 86.0,
+          "start_raw": "01:23.70",
+          "end_raw": "01:26.00",
+          "text": "Close-up on the father's weathered face, looking fixedly at the floor, refusing to meet her gaze.",
+          "norm_text": "Close-up on the father's weathered face, looking fixedly at the floor, refusing to meet her gaze."
+        },
+        {
+          "id": "E001:058",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Choking",
+            "Broken"
+          ],
+          "start": 86.0,
+          "end": 88.9,
+          "start_raw": "01:26.00",
+          "end_raw": "01:28.90",
+          "text": "Father... please look at me.",
+          "norm_text": "Father... please look at me."
+        },
+        {
+          "id": "E001:059",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 86.0,
+          "end": 89.5,
+          "start_raw": "01:26.00",
+          "end_raw": "01:29.50",
+          "text": "Close-up on Juliana looking up at him, tears streaming uncontrollably down her cheeks.",
+          "norm_text": "Close-up on Juliana looking up at him, tears streaming uncontrollably down her cheeks."
+        },
+        {
+          "id": "E001:060",
+          "kind": "action",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 89.5,
+          "end": 90.8,
+          "start_raw": "01:29.50",
+          "end_raw": "01:30.80",
+          "text": "The father tightens his jaw and stony expression, refusing to offer a single word or look.",
+          "norm_text": "The father tightens his jaw and stony expression, refusing to offer a single word or look."
+        },
+        {
+          "id": "E001:061",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 89.5,
+          "end": 90.8,
+          "start_raw": "01:29.50",
+          "end_raw": "01:30.80",
+          "text": "Profile close-up of the father staring blankly forward.",
+          "norm_text": "Profile close-up of the father staring blankly forward."
+        },
+        {
+          "id": "E001:062",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 90.8,
+          "end": 95.8,
+          "start_raw": "01:30.80",
+          "end_raw": "01:35.80",
+          "text": "Low-angle shot looking up at the Matriarch commanding the space with regal severity.",
+          "norm_text": "Low-angle shot looking up at the Matriarch commanding the space with regal severity."
+        },
+        {
+          "id": "E001:063",
+          "kind": "dialogue",
+          "speaker_raw": "MATRIARCH",
+          "modifiers": [],
+          "delivery": [
+            "Stern",
+            "Resolute"
+          ],
+          "start": 90.9,
+          "end": 91.9,
+          "start_raw": "01:30.90",
+          "end_raw": "01:31.90",
+          "text": "Enough!",
+          "norm_text": "Enough!"
+        },
+        {
+          "id": "E001:064",
+          "kind": "dialogue",
+          "speaker_raw": "MATRIARCH",
+          "modifiers": [],
+          "delivery": [
+            "Disgusted"
+          ],
+          "start": 92.1,
+          "end": 95.5,
+          "start_raw": "01:32.10",
+          "end_raw": "01:35.50",
+          "text": "You have embarrassed this family long enough.",
+          "norm_text": "You have embarrassed this family long enough."
+        },
+        {
+          "id": "E001:065",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 95.8,
+          "end": 98.6,
+          "start_raw": "01:35.80",
+          "end_raw": "01:38.60",
+          "text": "Close-up on Juliana as she rises, stung by the utter betrayal.",
+          "norm_text": "Close-up on Juliana as she rises, stung by the utter betrayal."
+        },
+        {
+          "id": "E001:066",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Incredulous"
+          ],
+          "start": 96.2,
+          "end": 98.2,
+          "start_raw": "01:36.20",
+          "end_raw": "01:38.20",
+          "text": "Embarrassed you?",
+          "norm_text": "Embarrassed you?"
+        },
+        {
+          "id": "E001:067",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 98.6,
+          "end": 102.5,
+          "start_raw": "01:38.60",
+          "end_raw": "01:42.50",
+          "text": "Medium shot of the Matriarch gesturing toward Clarissa, who stands elegantly in gold.",
+          "norm_text": "Medium shot of the Matriarch gesturing toward Clarissa, who stands elegantly in gold."
+        },
+        {
+          "id": "E001:068",
+          "kind": "dialogue",
+          "speaker_raw": "MATRIARCH",
+          "modifiers": [],
+          "delivery": [
+            "Haughty"
+          ],
+          "start": 98.8,
+          "end": 101.5,
+          "start_raw": "01:38.80",
+          "end_raw": "01:41.50",
+          "text": "Clarissa knows how to carry herself.",
+          "norm_text": "Clarissa knows how to carry herself."
+        },
+        {
+          "id": "E001:069",
+          "kind": "dialogue",
+          "speaker_raw": "MATRIARCH",
+          "modifiers": [],
+          "delivery": [
+            "Proud"
+          ],
+          "start": 101.6,
+          "end": 105.0,
+          "start_raw": "01:41.60",
+          "end_raw": "01:45.00",
+          "text": "She has beauty, connections, and a future worth protecting.",
+          "norm_text": "She has beauty, connections, and a future worth protecting."
+        },
+        {
+          "id": "E001:070",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 102.5,
+          "end": 105.3,
+          "start_raw": "01:42.50",
+          "end_raw": "01:45.30",
+          "text": "Medium profile two-shot of the Matriarch confronting Juliana face to face.",
+          "norm_text": "Medium profile two-shot of the Matriarch confronting Juliana face to face."
+        },
+        {
+          "id": "E001:071",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 105.3,
+          "end": 107.4,
+          "start_raw": "01:45.30",
+          "end_raw": "01:47.40",
+          "text": "Close-up on Juliana, demanding answers in spite of her humiliation.",
+          "norm_text": "Close-up on Juliana, demanding answers in spite of her humiliation."
+        },
+        {
+          "id": "E001:072",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Raw",
+            "Painful"
+          ],
+          "start": 105.4,
+          "end": 107.3,
+          "start_raw": "01:45.40",
+          "end_raw": "01:47.30",
+          "text": "And I am what?",
+          "norm_text": "And I am what?"
+        },
+        {
+          "id": "E001:073",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 107.4,
+          "end": 110.0,
+          "start_raw": "01:47.40",
+          "end_raw": "01:50.00",
+          "text": "Medium tracking shot showing the Lady in Gold Gown stepping past Juliana toward the center.",
+          "norm_text": "Medium tracking shot showing the Lady in Gold Gown stepping past Juliana toward the center."
+        },
+        {
+          "id": "E001:074",
+          "kind": "dialogue",
+          "speaker_raw": "LADY IN GOLD GOWN",
+          "modifiers": [],
+          "delivery": [
+            "Viciously Calm"
+          ],
+          "start": 107.5,
+          "end": 110.8,
+          "start_raw": "01:47.50",
+          "end_raw": "01:50.80",
+          "text": "You are the daughter people tolerate because they have to.",
+          "norm_text": "You are the daughter people tolerate because they have to."
+        },
+        {
+          "id": "E001:075",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 110.0,
+          "end": 113.0,
+          "start_raw": "01:50.00",
+          "end_raw": "01:53.00",
+          "text": "Close-up on Juliana absorbing the venomous words, her breathing shallow.",
+          "norm_text": "Close-up on Juliana absorbing the venomous words, her breathing shallow."
+        },
+        {
+          "id": "E001:076",
+          "kind": "dialogue",
+          "speaker_raw": "LADY IN GOLD GOWN",
+          "modifiers": [],
+          "delivery": [
+            "Gloating"
+          ],
+          "start": 111.1,
+          "end": 113.0,
+          "start_raw": "01:51.10",
+          "end_raw": "01:53.00",
+          "text": "I am the daughter they choose.",
+          "norm_text": "I am the daughter they choose."
+        },
+        {
+          "id": "E001:077",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 113.0,
+          "end": 115.2,
+          "start_raw": "01:53.00",
+          "end_raw": "01:55.20",
+          "text": "Medium shot of the Lady in Gold Gown smiling warmly at Gerald beside the altar candles.",
+          "norm_text": "Medium shot of the Lady in Gold Gown smiling warmly at Gerald beside the altar candles."
+        },
+        {
+          "id": "E001:078",
+          "kind": "dialogue",
+          "speaker_raw": "MATRIARCH",
+          "modifiers": [
+            "O.S."
+          ],
+          "delivery": [
+            "Firm"
+          ],
+          "start": 113.3,
+          "end": 115.7,
+          "start_raw": "01:53.30",
+          "end_raw": "01:55.70",
+          "text": "Clarissa is the jewel of this family.",
+          "norm_text": "Clarissa is the jewel of this family."
+        },
+        {
+          "id": "E001:079",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 115.2,
+          "end": 117.0,
+          "start_raw": "01:55.20",
+          "end_raw": "01:57.00",
+          "text": "Close two-shot of the Matriarch and Juliana standing side by side in profile.",
+          "norm_text": "Close two-shot of the Matriarch and Juliana standing side by side in profile."
+        },
+        {
+          "id": "E001:080",
+          "kind": "dialogue",
+          "speaker_raw": "LADY JULIANA",
+          "modifiers": [],
+          "delivery": [
+            "Trembling",
+            "Dignified"
+          ],
+          "start": 117.0,
+          "end": 119.0,
+          "start_raw": "01:57.00",
+          "end_raw": "01:59.00",
+          "text": "So that is what I was worth to you?",
+          "norm_text": "So that is what I was worth to you?"
+        },
+        {
+          "id": "E001:081",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 117.0,
+          "end": 119.5,
+          "start_raw": "01:57.00",
+          "end_raw": "01:59.50",
+          "text": "Medium shot framing Juliana looking directly at Gerald, who towers over her coldly.",
+          "norm_text": "Medium shot framing Juliana looking directly at Gerald, who towers over her coldly."
+        },
+        {
+          "id": "E001:082",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 119.5,
+          "end": 122.5,
+          "start_raw": "01:59.50",
+          "end_raw": "02:02.50",
+          "text": "Close-up on Gerald's sharp jawline as he looks down at her without an ounce of remorse.",
+          "norm_text": "Close-up on Gerald's sharp jawline as he looks down at her without an ounce of remorse."
+        },
+        {
+          "id": "E001:083",
+          "kind": "dialogue",
+          "speaker_raw": "THE FORMER GROOM",
+          "modifiers": [],
+          "delivery": [
+            "Scornful",
+            "Hard"
+          ],
+          "start": 119.8,
+          "end": 122.3,
+          "start_raw": "01:59.80",
+          "end_raw": "02:02.30",
+          "text": "You have nothing to offer me anymore.",
+          "norm_text": "You have nothing to offer me anymore."
+        },
+        {
+          "id": "E001:084",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 122.5,
+          "end": 124.2,
+          "start_raw": "02:02.50",
+          "end_raw": "02:04.20",
+          "text": "Extreme close-up on Juliana's eye as a single tear rolls down her cheek.",
+          "norm_text": "Extreme close-up on Juliana's eye as a single tear rolls down her cheek."
+        },
+        {
+          "id": "E001:085",
+          "kind": "dialogue",
+          "speaker_raw": "THE FORMER GROOM",
+          "modifiers": [],
+          "delivery": [
+            "Arrogant",
+            "Dismissive"
+          ],
+          "start": 124.2,
+          "end": 127.5,
+          "start_raw": "02:04.20",
+          "end_raw": "02:07.50",
+          "text": "I cannot marry a woman of such plainness and low value...",
+          "norm_text": "I cannot marry a woman of such plainness and low value..."
+        },
+        {
+          "id": "E001:086",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 124.2,
+          "end": 128.5,
+          "start_raw": "02:04.20",
+          "end_raw": "02:08.50",
+          "text": "Full shot tracking Gerald as he turns his back on Juliana and walks back toward Clarissa and the altar.",
+          "norm_text": "Full shot tracking Gerald as he turns his back on Juliana and walks back toward Clarissa and the altar."
+        },
+        {
+          "id": "E001:087",
+          "kind": "dialogue",
+          "speaker_raw": "THE FORMER GROOM",
+          "modifiers": [],
+          "delivery": [
+            "Reverent toward Clarissa"
+          ],
+          "start": 128.5,
+          "end": 131.2,
+          "start_raw": "02:08.50",
+          "end_raw": "02:11.20",
+          "text": "...when Clarissa is the true jewel of the county.",
+          "norm_text": "...when Clarissa is the true jewel of the county."
+        },
+        {
+          "id": "E001:088",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 128.5,
+          "end": 131.3,
+          "start_raw": "02:08.50",
+          "end_raw": "02:11.30",
+          "text": "Close-up on Clarissa's radiant, conceited smile basking in Gerald's words.",
+          "norm_text": "Close-up on Clarissa's radiant, conceited smile basking in Gerald's words."
+        },
+        {
+          "id": "E001:089",
+          "kind": "action",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 131.3,
+          "end": 133.8,
+          "start_raw": "02:11.30",
+          "end_raw": "02:13.80",
+          "text": "Juliana's hand clenches fiercely into the folds of her mother's silk bridal gown, knuckles whitening with suppressed fury.",
+          "norm_text": "Juliana's hand clenches fiercely into the folds of her mother's silk bridal gown, knuckles whitening with suppressed fury."
+        },
+        {
+          "id": "E001:090",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 131.3,
+          "end": 133.8,
+          "start_raw": "02:11.30",
+          "end_raw": "02:13.80",
+          "text": "Tight insert on Juliana's white-knuckled hand clutching the gown fabric.",
+          "norm_text": "Tight insert on Juliana's white-knuckled hand clutching the gown fabric."
+        },
+        {
+          "id": "E001:091",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 133.8,
+          "end": 137.0,
+          "start_raw": "02:13.80",
+          "end_raw": "02:17.00",
+          "text": "Push-in close-up on Juliana's tearful face. Her trembling mouth straightens, her tear-filled blue eyes hardening from sheer devastation into cold, resolute defiance.",
+          "norm_text": "Push-in close-up on Juliana's tearful face. Her trembling mouth straightens, her tear-filled blue eyes hardening from sheer devastation into cold, resolute defiance."
+        },
+        {
+          "id": "E001:092",
+          "kind": "action",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 133.8,
+          "end": 137.0,
+          "start_raw": "02:13.80",
+          "end_raw": "02:17.00",
+          "text": "Juliana breathes through the agony, refusing to break down further in front of the congregation.",
+          "norm_text": "Juliana breathes through the agony, refusing to break down further in front of the congregation."
+        },
+        {
+          "id": "E001:093",
+          "kind": "sfx",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 135.0,
+          "end": 137.5,
+          "start_raw": "02:15.00",
+          "end_raw": "02:17.50",
+          "text": "Solemn low-pitched string drone swells to an ominous cliffhanger peak.",
+          "norm_text": "Solemn low-pitched string drone swells to an ominous cliffhanger peak."
+        },
+        {
+          "id": "E001:094",
+          "kind": "camera",
+          "speaker_raw": null,
+          "modifiers": [],
+          "delivery": [],
+          "start": 137.0,
+          "end": 138.0,
+          "start_raw": "02:17.00",
+          "end_raw": "02:18.00",
+          "text": "Cut to black.",
+          "norm_text": "Cut to black."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "suspicious_timing",
+          "message": "Event E001:028 dialogue 0.7 words/sec (1 words in 1.40s)",
+          "episode": 1,
+          "block_index": null
+        }
+      ]
+    }
+  ]
+}

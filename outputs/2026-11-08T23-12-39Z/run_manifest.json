@@ -1,0 +1,89 @@
+{
+  "run_id": "2026-11-08T23-12-39Z",
+  "show": "unknown",
+  "llm": {
+    "provider": "openai",
+    "eval_model": "openai/gpt-oss-20b",
+    "finalist_model": null,
+    "actual_model": "openai/gpt-oss-20b",
+    "mode": "llm"
+  },
+  "prompt_versions": {
+    "evaluate": "v1",
+    "blind": "v1"
+  },
+  "stages": [
+    {
+      "name": "parse_and_validate",
+      "duration_s": 0.1258,
+      "count": 50
+    },
+    {
+      "name": "timeline",
+      "duration_s": 0.0002,
+      "count": 95
+    },
+    {
+      "name": "generate",
+      "duration_s": 0.0812,
+      "count": 1202
+    },
+    {
+      "name": "prefilter",
+      "duration_s": 0.0927,
+      "count": 18
+    },
+    {
+      "name": "evaluate",
+      "duration_s": 3128.2752,
+      "count": 18
+    },
+    {
+      "name": "dedupe_and_rank",
+      "duration_s": 0.0001,
+      "count": 3
+    }
+  ],
+  "total_duration_s": 3128.5752,
+  "config": {
+    "weights": {
+      "hook": 0.25,
+      "cliffhanger": 0.25,
+      "standalone": 0.2,
+      "emotion": 0.15,
+      "coherence": 0.1,
+      "duration": 0.05
+    },
+    "llm_share": {
+      "hook": 0.5,
+      "cliffhanger": 0.6,
+      "standalone": 0.8,
+      "emotion": 0.5,
+      "coherence": 0.7
+    },
+    "duration": {
+      "hard_min": 20.0,
+      "hard_max": 60.0,
+      "soft_min": 25.0,
+      "soft_max": 45.0,
+      "edge_score": 0.6
+    },
+    "cut_rules": {
+      "lead_in": 1.5,
+      "tail_hold": 1.5,
+      "epsilon": 0.05,
+      "min_dur": 20.0,
+      "max_dur": 60.0
+    },
+    "prefilter": {
+      "variants_per_cluster": 3,
+      "clusters_per_episode": 6,
+      "iou_threshold": 0.5
+    },
+    "tiers": {
+      "A": 75.0,
+      "B": 60.0
+    },
+    "top_n": 10
+  }
+}

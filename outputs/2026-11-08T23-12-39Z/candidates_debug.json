@@ -1,0 +1,225 @@
+{
+  "candidates": [
+    {
+      "cand_id": "PRM-d6db78a8ccea",
+      "episode": 1,
+      "start": 46.8,
+      "end": 74.3,
+      "duration": 27.5,
+      "score": 82.96,
+      "tier": "A",
+      "features": {
+        "hook": {
+          "features": {
+            "speech_within_1s": 1.0,
+            "delivery_intensity": 0.95,
+            "shock_hits": 0.6666666666666666,
+            "second_person": 0.5,
+            "exclamation_or_question": 1.0,
+            "quiet_opening_penalty": 0.0
+          },
+          "score": 0.8458333333333332
+        },
+        "cliffhanger": {
+          "features": {
+            "final_is_question_or_ellipsis": 1.0,
+            "reveal_threat_hits": 0.6666666666666666,
+            "next_beat_cut_off": 1.0,
+            "calm_resolution_penalty": 0.0,
+            "episode_end_bonus": 0.0
+          },
+          "score": 0.7166666666666667
+        },
+        "emotion": {
+          "features": {
+            "peak_delivery_intensity": 0.95,
+            "mean_delivery_intensity": 0.59,
+            "speaker_alternations": 1.0,
+            "words_per_sec": 0.3333333333333333,
+            "exclamation_density": 1.0
+          },
+          "score": 0.8133333333333332
+        },
+        "coherence": {
+          "features": {
+            "scene_crossings": 0.0,
+            "mid_dialogue_cuts": 0.0
+          },
+          "score": 1.0
+        },
+        "standalone": {
+          "features": {
+            "distinct_speakers": 1.0,
+            "opening_not_pronoun_only": 1.0,
+            "speakers_named_in_clip": 1.0
+          },
+          "score": 1.0
+        },
+        "duration": {
+          "features": {
+            "seconds": 27.5,
+            "in_hard_range": true,
+            "plateau": 1.0
+          },
+          "score": 1.0
+        }
+      },
+      "llm_eval": {
+        "hook": 4.0,
+        "cliffhanger": 4.0,
+        "standalone": 4.0,
+        "emotion": 5.0,
+        "coherence": 5.0
+      },
+      "flags": []
+    },
+    {
+      "cand_id": "PRM-d838fa201119",
+      "episode": 1,
+      "start": 66.5,
+      "end": 107.3,
+      "duration": 40.8,
+      "score": 75.77,
+      "tier": "A",
+      "features": {
+        "hook": {
+          "features": {
+            "speech_within_1s": 1.0,
+            "delivery_intensity": 0.9,
+            "shock_hits": 0.6666666666666666,
+            "second_person": 0.5,
+            "exclamation_or_question": 1.0,
+            "quiet_opening_penalty": 0.0
+          },
+          "score": 0.8333333333333333
+        },
+        "cliffhanger": {
+          "features": {
+            "final_is_question_or_ellipsis": 1.0,
+            "reveal_threat_hits": 0.6666666666666666,
+            "next_beat_cut_off": 1.0,
+            "calm_resolution_penalty": 0.0,
+            "episode_end_bonus": 0.0
+          },
+          "score": 0.7166666666666667
+        },
+        "emotion": {
+          "features": {
+            "peak_delivery_intensity": 0.9,
+            "mean_delivery_intensity": 0.5342105263157895,
+            "speaker_alternations": 1.0,
+            "words_per_sec": 0.2696078431372549,
+            "exclamation_density": 0.3333333333333333
+          },
+          "score": 0.7088467492260062
+        },
+        "coherence": {
+          "features": {
+            "scene_crossings": 0.0,
+            "mid_dialogue_cuts": 0.0
+          },
+          "score": 1.0
+        },
+        "standalone": {
+          "features": {
+            "distinct_speakers": 1.0,
+            "opening_not_pronoun_only": 1.0,
+            "speakers_named_in_clip": 1.0
+          },
+          "score": 1.0
+        },
+        "duration": {
+          "features": {
+            "seconds": 40.8,
+            "in_hard_range": true,
+            "plateau": 1.0
+          },
+          "score": 1.0
+        }
+      },
+      "llm_eval": {
+        "hook": 2.0,
+        "cliffhanger": 4.0,
+        "standalone": 4.0,
+        "emotion": 5.0,
+        "coherence": 5.0
+      },
+      "flags": []
+    },
+    {
+      "cand_id": "PRM-f54303787d1a",
+      "episode": 1,
+      "start": 21.8,
+      "end": 54.6,
+      "duration": 32.8,
+      "score": 49.46,
+      "tier": "C",
+      "features": {
+        "hook": {
+          "features": {
+            "speech_within_1s": 1.0,
+            "delivery_intensity": 0.7,
+            "shock_hits": 0.3333333333333333,
+            "second_person": 1.0,
+            "exclamation_or_question": 1.0,
+            "quiet_opening_penalty": 0.0
+          },
+          "score": 0.7916666666666666
+        },
+        "cliffhanger": {
+          "features": {
+            "final_is_question_or_ellipsis": 1.0,
+            "reveal_threat_hits": 0.3333333333333333,
+            "next_beat_cut_off": 1.0,
+            "calm_resolution_penalty": 0.0,
+            "episode_end_bonus": 0.0
+          },
+          "score": 0.6333333333333333
+        },
+        "emotion": {
+          "features": {
+            "peak_delivery_intensity": 0.95,
+            "mean_delivery_intensity": 0.6730769230769231,
+            "speaker_alternations": 1.0,
+            "words_per_sec": 0.17276422764227642,
+            "exclamation_density": 0.3333333333333333
+          },
+          "score": 0.7513789868667918
+        },
+        "coherence": {
+          "features": {
+            "scene_crossings": 0.0,
+            "mid_dialogue_cuts": 0.0
+          },
+          "score": 1.0
+        },
+        "standalone": {
+          "features": {
+            "distinct_speakers": 1.0,
+            "opening_not_pronoun_only": 1.0,
+            "speakers_named_in_clip": 1.0
+          },
+          "score": 1.0
+        },
+        "duration": {
+          "features": {
+            "seconds": 32.8,
+            "in_hard_range": true,
+            "plateau": 1.0
+          },
+          "score": 1.0
+        }
+      },
+      "llm_eval": {
+        "hook": 2.0,
+        "cliffhanger": 1.0,
+        "standalone": 4.0,
+        "emotion": 4.0,
+        "coherence": 5.0
+      },
+      "flags": [
+        "UNGROUNDED_LLM_TEXT"
+      ]
+    }
+  ]
+}

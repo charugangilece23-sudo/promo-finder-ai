@@ -1,0 +1,12 @@
+# Core dependencies for Promo Finder (Kuku assignment Problem 1).
+# Provider SDKs are imported lazily inside their adapters so the pipeline
+# runs without any of them installed (heuristic-only mode).
+pydantic>=2.0
+PyYAML>=6.0
+python-dotenv>=1.0
+pytest>=8.0
+
+# Provider SDKs (lazy imports; install the one you use):
+#   pip install google-genai      # Gemini
+#   pip install openai            # OpenAI-compatible (OpenAI, OpenRouter, Groq, Ollama, ...)
+#   pip install anthropic         # Anthropic

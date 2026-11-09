@@ -1,0 +1,601 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "2026-11-09T00-04-48Z",
+    "show": "unknown",
+    "llm": {
+      "provider": "openai",
+      "eval_model": "openai/gpt-oss-20b",
+      "finalist_model": null,
+      "actual_model": "openai/gpt-oss-20b",
+      "mode": "llm"
+    },
+    "prompt_versions": {
+      "evaluate": "heuristic",
+      "blind": "heuristic"
+    }
+  },
+  "promos": [
+    {
+      "promo_id": "PRM-d6db78a8ccea",
+      "rank": 1,
+      "tier": "A",
+      "score": 82.96,
+      "score_breakdown": {
+        "hook": 0.8458333333333332,
+        "cliffhanger": 0.7166666666666667,
+        "emotion": 0.8133333333333332,
+        "coherence": 1.0,
+        "standalone": 1.0,
+        "duration": 1.0
+      },
+      "episodes": [
+        1
+      ],
+      "total_duration_s": 27.5,
+      "segments": [
+        {
+          "episode": 1,
+          "start": "00:46.80",
+          "end": "01:14.30",
+          "start_s": 46.8,
+          "end_s": 74.3,
+          "duration_s": 27.5,
+          "start_event_id": "E001:030",
+          "end_event_id": "E001:049",
+          "transcript": [
+            {
+              "event_id": "E001:030",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "You knew this before I walked through those doors!"
+            },
+            {
+              "event_id": "E001:031",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on Juliana clutching her chest, her sorrow turning into burning outrage."
+            },
+            {
+              "event_id": "E001:032",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Medium shot of Gerald standing stoic and impassive next to the smug Lady in Gold Gown."
+            },
+            {
+              "event_id": "E001:033",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on Juliana's hands desperately clenching fistfuls of her white dress fabric."
+            },
+            {
+              "event_id": "E001:034",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "You let me come here..."
+            },
+            {
+              "event_id": "E001:035",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on Juliana's tear-streaked face as she shakes with grief."
+            },
+            {
+              "event_id": "E001:036",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "You let me dress in my mother's gown..."
+            },
+            {
+              "event_id": "E001:037",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "You let me believe I was walking toward my husband!"
+            },
+            {
+              "event_id": "E001:038",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Medium shot on Gerald stepping forward, cold and indifferent, with the Lady in Gold Gown lingering in soft focus behind him."
+            },
+            {
+              "event_id": "E001:039",
+              "kind": "dialogue",
+              "speaker": "THE FORMER GROOM",
+              "text": "I changed my mind."
+            },
+            {
+              "event_id": "E001:040",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Tight close-up on Gerald's hardened profile as he glances down."
+            },
+            {
+              "event_id": "E001:041",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Extreme close-up on Juliana's furious, weeping face."
+            },
+            {
+              "event_id": "E001:042",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "You swore you loved me!"
+            },
+            {
+              "event_id": "E001:043",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on the Lady in Gold Gown smiling condescendingly."
+            },
+            {
+              "event_id": "E001:044",
+              "kind": "dialogue",
+              "speaker": "LADY IN GOLD GOWN",
+              "text": "People change their minds, sister."
+            },
+            {
+              "event_id": "E001:045",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Medium profile shot of the Lady in Gold Gown turning her head subtly toward Gerald with satisfied malice."
+            },
+            {
+              "event_id": "E001:046",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "And you knew?"
+            },
+            {
+              "event_id": "E001:047",
+              "kind": "dialogue",
+              "speaker": "LADY IN GOLD GOWN",
+              "text": "Of course I knew."
+            },
+            {
+              "event_id": "E001:049",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "How long?"
+            }
+          ]
+        }
+      ],
+      "hook": {
+        "event_id": "E001:030",
+        "quote": "You knew this before I walked through those doors!",
+        "description": "Juliana confronts Gerald with a sharp accusation, immediately establishing high tension.",
+        "seconds_from_start": 0.0
+      },
+      "cliffhanger": {
+        "event_id": "E001:049",
+        "quote": "How long?",
+        "description": "Juliana ends with an unresolved question, leaving the audience hanging on the duration of the betrayal."
+      },
+      "why_it_works": "Heuristic hook/cliffhanger from detected beats; no LLM judgement available.",
+      "weaknesses": [
+        "No LLM evaluation; scores are rule-based only."
+      ],
+      "flags": [],
+      "confidence": "medium",
+      "validation": {
+        "duration_ok": true,
+        "cuts_dialogue_safe": true,
+        "quotes_grounded": true,
+        "bounds_ok": true
+      }
+    },
+    {
+      "promo_id": "PRM-d838fa201119",
+      "rank": 2,
+      "tier": "A",
+      "score": 75.77,
+      "score_breakdown": {
+        "hook": 0.8333333333333333,
+        "cliffhanger": 0.7166666666666667,
+        "emotion": 0.7088467492260062,
+        "coherence": 1.0,
+        "standalone": 1.0,
+        "duration": 1.0
+      },
+      "episodes": [
+        1
+      ],
+      "total_duration_s": 40.8,
+      "segments": [
+        {
+          "episode": 1,
+          "start": "01:06.50",
+          "end": "01:47.30",
+          "start_s": 66.5,
+          "end_s": 107.3,
+          "duration_s": 40.8,
+          "start_event_id": "E001:044",
+          "end_event_id": "E001:072",
+          "transcript": [
+            {
+              "event_id": "E001:044",
+              "kind": "dialogue",
+              "speaker": "LADY IN GOLD GOWN",
+              "text": "People change their minds, sister."
+            },
+            {
+              "event_id": "E001:045",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Medium profile shot of the Lady in Gold Gown turning her head subtly toward Gerald with satisfied malice."
+            },
+            {
+              "event_id": "E001:046",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "And you knew?"
+            },
+            {
+              "event_id": "E001:047",
+              "kind": "dialogue",
+              "speaker": "LADY IN GOLD GOWN",
+              "text": "Of course I knew."
+            },
+            {
+              "event_id": "E001:048",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on Juliana, stunned by the callous depth of the conspiracy."
+            },
+            {
+              "event_id": "E001:049",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "How long?"
+            },
+            {
+              "event_id": "E001:050",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Medium two-shot of the Lady in Gold Gown and Gerald looking together down at Juliana."
+            },
+            {
+              "event_id": "E001:051",
+              "kind": "dialogue",
+              "speaker": "LADY IN GOLD GOWN",
+              "text": "Long enough to know he was never going to marry you."
+            },
+            {
+              "event_id": "E001:052",
+              "kind": "action",
+              "speaker": "",
+              "text": "Juliana turns abruptly toward the first row of pews, where her elderly father sits gripping an ornate brass cane."
+            },
+            {
+              "event_id": "E001:053",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on the father's hand tightly gripping the gold curved handle of his walking cane."
+            },
+            {
+              "event_id": "E001:054",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "Father..."
+            },
+            {
+              "event_id": "E001:055",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "Tell them this is a mistake."
+            },
+            {
+              "event_id": "E001:056",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Wide shot showing Juliana dropping to her knees beside her seated father, pleading with him."
+            },
+            {
+              "event_id": "E001:057",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on the father's weathered face, looking fixedly at the floor, refusing to meet her gaze."
+            },
+            {
+              "event_id": "E001:058",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "Father... please look at me."
+            },
+            {
+              "event_id": "E001:059",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on Juliana looking up at him, tears streaming uncontrollably down her cheeks."
+            },
+            {
+              "event_id": "E001:060",
+              "kind": "action",
+              "speaker": "",
+              "text": "The father tightens his jaw and stony expression, refusing to offer a single word or look."
+            },
+            {
+              "event_id": "E001:061",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Profile close-up of the father staring blankly forward."
+            },
+            {
+              "event_id": "E001:062",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Low-angle shot looking up at the Matriarch commanding the space with regal severity."
+            },
+            {
+              "event_id": "E001:063",
+              "kind": "dialogue",
+              "speaker": "MATRIARCH",
+              "text": "Enough!"
+            },
+            {
+              "event_id": "E001:064",
+              "kind": "dialogue",
+              "speaker": "MATRIARCH",
+              "text": "You have embarrassed this family long enough."
+            },
+            {
+              "event_id": "E001:065",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on Juliana as she rises, stung by the utter betrayal."
+            },
+            {
+              "event_id": "E001:066",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "Embarrassed you?"
+            },
+            {
+              "event_id": "E001:067",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Medium shot of the Matriarch gesturing toward Clarissa, who stands elegantly in gold."
+            },
+            {
+              "event_id": "E001:068",
+              "kind": "dialogue",
+              "speaker": "MATRIARCH",
+              "text": "Clarissa knows how to carry herself."
+            },
+            {
+              "event_id": "E001:069",
+              "kind": "dialogue",
+              "speaker": "MATRIARCH",
+              "text": "She has beauty, connections, and a future worth protecting."
+            },
+            {
+              "event_id": "E001:070",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Medium profile two-shot of the Matriarch confronting Juliana face to face."
+            },
+            {
+              "event_id": "E001:072",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "And I am what?"
+            }
+          ]
+        }
+      ],
+      "hook": {
+        "event_id": "E001:044",
+        "quote": "People change their minds, sister.",
+        "description": "Lady in Gold Gown delivers an ominous line hinting at betrayal and shifting loyalties.",
+        "seconds_from_start": 0.0
+      },
+      "cliffhanger": {
+        "event_id": "E001:072",
+        "quote": "And I am what?",
+        "description": "Juliana confronts her identity and role after a heated confrontation, leaving the audience in suspense."
+      },
+      "why_it_works": "Heuristic hook/cliffhanger from detected beats; no LLM judgement available.",
+      "weaknesses": [
+        "No LLM evaluation; scores are rule-based only."
+      ],
+      "flags": [],
+      "confidence": "medium",
+      "validation": {
+        "duration_ok": true,
+        "cuts_dialogue_safe": true,
+        "quotes_grounded": true,
+        "bounds_ok": true
+      }
+    },
+    {
+      "promo_id": "PRM-f54303787d1a",
+      "rank": 3,
+      "tier": "C",
+      "score": 49.46,
+      "score_breakdown": {
+        "hook": 0.7916666666666666,
+        "cliffhanger": 0.6333333333333333,
+        "emotion": 0.7513789868667918,
+        "coherence": 1.0,
+        "standalone": 1.0,
+        "duration": 1.0
+      },
+      "episodes": [
+        1
+      ],
+      "total_duration_s": 32.8,
+      "segments": [
+        {
+          "episode": 1,
+          "start": "00:21.80",
+          "end": "00:54.60",
+          "start_s": 21.8,
+          "end_s": 54.6,
+          "duration_s": 32.8,
+          "start_event_id": "E001:014",
+          "end_event_id": "E001:033",
+          "transcript": [
+            {
+              "event_id": "E001:014",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "What do you mean?"
+            },
+            {
+              "event_id": "E001:015",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Medium shot of the Matriarch gesturing dismissively toward the altar."
+            },
+            {
+              "event_id": "E001:016",
+              "kind": "dialogue",
+              "speaker": "MATRIARCH",
+              "text": "Look for yourself."
+            },
+            {
+              "event_id": "E001:017",
+              "kind": "action",
+              "speaker": "",
+              "text": "Juliana walks forward past the Matriarch, her breath hitching as she approaches the altar steps, looking up in shock."
+            },
+            {
+              "event_id": "E001:018",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Medium front tracking shot moving backward ahead of Juliana as she advances down the center aisle."
+            },
+            {
+              "event_id": "E001:019",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Panning shot across the seated wedding guests whispering and casting judging glances from the wooden pews."
+            },
+            {
+              "event_id": "E001:020",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Low-angle shot from behind Juliana looking up at Gerald and the Lady in Gold Gown standing proudly before the altar."
+            },
+            {
+              "event_id": "E001:021",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on Juliana's trembling lips and shocked, tearful blue eyes."
+            },
+            {
+              "event_id": "E001:022",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "Gerald?"
+            },
+            {
+              "event_id": "E001:023",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "Why are you holding her hand?"
+            },
+            {
+              "event_id": "E001:024",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up insert of Gerald's fingers firmly interlocked with the white-gloved hand of the Lady in Gold Gown."
+            },
+            {
+              "event_id": "E001:025",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on the Lady in Gold Gown beaming with cruel triumph."
+            },
+            {
+              "event_id": "E001:026",
+              "kind": "dialogue",
+              "speaker": "LADY IN GOLD GOWN",
+              "text": "Because he is marrying me."
+            },
+            {
+              "event_id": "E001:027",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on Juliana as tears spill over her eyelashes."
+            },
+            {
+              "event_id": "E001:028",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "No..."
+            },
+            {
+              "event_id": "E001:029",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Wide profile shot showing Juliana standing below the altar platform, looking up at Gerald and her sister."
+            },
+            {
+              "event_id": "E001:030",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "You knew this before I walked through those doors!"
+            },
+            {
+              "event_id": "E001:031",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on Juliana clutching her chest, her sorrow turning into burning outrage."
+            },
+            {
+              "event_id": "E001:032",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Medium shot of Gerald standing stoic and impassive next to the smug Lady in Gold Gown."
+            },
+            {
+              "event_id": "E001:033",
+              "kind": "camera",
+              "speaker": "",
+              "text": "Close-up on Juliana's hands desperately clenching fistfuls of her white dress fabric."
+            },
+            {
+              "event_id": "E001:034",
+              "kind": "dialogue",
+              "speaker": "LADY JULIANA",
+              "text": "You let me come here..."
+            }
+          ]
+        }
+      ],
+      "hook": {
+        "event_id": "E001:014",
+        "quote": "What do you mean?",
+        "description": "Juliana, trembling and pleading, questions the situation, setting up emotional tension.",
+        "seconds_from_start": 0.0
+      },
+      "cliffhanger": {
+        "event_id": "E001:033",
+        "quote": "Close-up on Juliana's hands desperately clenching fistfuls of her white dress fabric.",
+        "description": "The clip ends with a close‑up of Juliana’s clenched fists, showing her anger and distress."
+      },
+      "why_it_works": "Heuristic hook/cliffhanger from detected beats; no LLM judgement available.",
+      "weaknesses": [
+        "No LLM evaluation; scores are rule-based only."
+      ],
+      "flags": [
+        "UNGROUNDED_LLM_TEXT"
+      ],
+      "confidence": "medium",
+      "validation": {
+        "duration_ok": true,
+        "cuts_dialogue_safe": true,
+        "quotes_grounded": true,
+        "bounds_ok": true
+      }
+    }
+  ],
+  "rejected_summary": {
+    "duplicates": 0,
+    "gate_failures": 0,
+    "llm_invalid": 0
+  },
+  "warnings": []
+}

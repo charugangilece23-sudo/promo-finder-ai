@@ -1,0 +1,18 @@
+EPISODE NUMBER: Episode 3
+EPISODE LOGLINE: Inverted timestamps.
+CONTINUITY NOTES: None.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. ROOM – DAY
+Scene start: 00:00.00
+Scene end: 00:10.00
+
+Actions and dialogue:
+
+**ALICE (Angry):**
+Start: (00:05.00) | End: (00:02.00)
+"End before start."
+
+--- SCRIPT END ---

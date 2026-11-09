@@ -1,0 +1,5 @@
+This is a completely different format.
+Scene 1 starts at 10:00.
+Character A says something.
+Character B replies.
+End of scene.

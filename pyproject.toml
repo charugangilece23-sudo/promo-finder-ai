@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promo_finder"
+version = "0.1.0"
+description = "AI-powered promo discovery for screenplay transcripts (Kuku assignment Problem 1)"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0",
+    "PyYAML>=6.0",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+promo-finder = "promo_finder.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

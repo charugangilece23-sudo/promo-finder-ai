@@ -1,0 +1,2 @@
+[console_scripts]
+promo-finder = promo_finder.cli:main

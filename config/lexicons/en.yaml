@@ -1,0 +1,105 @@
+# English lexicon for deterministic promo features (architecture §11.4).
+# Replaceable per show/language. No episode- or character-specific names.
+
+# Delivery-tag intensities (0-1) used for the emotion feature.
+delivery_intensities:
+  # High intensity
+  Outraged: 0.95
+  Gloating: 0.9
+  Betrayed: 0.95
+  Furious: 0.95
+  Piercing: 0.9
+  Horrified: 0.9
+  Devastated: 0.9
+  Crushed: 0.85
+  Choking: 0.85
+  Screaming: 1.0
+  Accusing: 0.85
+  Defiant: 0.8
+  Viciously: 0.9
+  Cruel: 0.8
+  Mocking: 0.7
+  Smug: 0.6
+  Desperate: 0.75
+  Pleading: 0.7
+  Trembling: 0.65
+  Shaken: 0.6
+  Heartbroken: 0.8
+  Gasping: 0.7
+  Outraged: 0.95
+
+  # Medium intensity
+  Confused: 0.4
+  Breathless: 0.4
+  Unbelieving: 0.5
+  Blunt: 0.5
+  Dismissive: 0.5
+  Cold: 0.4
+  Commanding: 0.5
+  Haughty: 0.5
+  Proud: 0.4
+  Stern: 0.5
+  Resolute: 0.4
+  Disgusted: 0.6
+  Incredulous: 0.5
+  Raw: 0.6
+  Painful: 0.6
+
+  # Low intensity
+  Calm: 0.2
+  Gentle: 0.2
+  Peaceful: 0.1
+  Steady: 0.2
+  Resolved: 0.1
+  Smiling: 0.2
+  Cheerful: 0.2
+
+# Shock / reveal / threat / accusation / command terms for the hook feature.
+shock_terms:
+  - "never"
+  - "betray"
+  - "lie"
+  - "liar"
+  - "truth"
+  - "secret"
+  - "knew"
+  - "changed my mind"
+  - "not anymore"
+  - "look for yourself"
+  - "you knew"
+  - "how long"
+  - "embarrassed"
+  - "worth"
+  - "plainness"
+  - "low value"
+  - "jewel"
+
+cliffhanger_terms:
+  - "?"
+  - "..."
+  - "how"
+  - "why"
+  - "what"
+  - "who"
+  - "when"
+  - "if"
+  - "unless"
+  - "wait"
+  - "stop"
+  - "don't"
+
+resolution_terms:
+  - "peace"
+  - "resolved"
+  - "alright"
+  - "okay"
+  - "fine"
+  - "done"
+  - "over"
+  - "settled"
+
+# Second-person address terms (hook booster).
+second_person_terms:
+  - "you"
+  - "your"
+  - "yourself"

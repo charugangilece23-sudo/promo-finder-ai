@@ -1,0 +1,68 @@
+# Promo Finder configuration (architecture §11.7, §11.1, §11.5).
+# These are UNTUNED starting values (assumption A8). Do not treat as fitted.
+
+# Deterministic feature weights (must sum to 1.0)
+weights:
+  hook: 0.25
+  cliffhanger: 0.25
+  standalone: 0.20
+  emotion: 0.15
+  coherence: 0.10
+  duration: 0.05
+
+# LLM share per dimension (alpha_i in s_i = alpha_i*llm_i + (1-alpha_i)*det_i)
+llm_share:
+  hook: 0.5
+  cliffhanger: 0.6
+  standalone: 0.8
+  emotion: 0.5
+  coherence: 0.7
+
+# Duration rules (seconds)
+duration:
+  hard_min: 20
+  hard_max: 60
+  soft_min: 25
+  soft_max: 45
+  edge_score: 0.6
+
+# Weakest-link penalty (applies to hook, cliffhanger, standalone)
+weakest_link:
+  dims: [hook, cliffhanger, standalone]
+  floor_penalty: 0.6
+  knee: 0.5
+
+# Tiers (score out of 100)
+tiers:
+  A: 75
+  B: 60
+
+# Legal cut-point rules (architecture §11.1)
+cut_rules:
+  lead_in: 1.5      # first beat must begin within this many seconds of clip start
+  tail_hold: 1.5    # last beat must end within this many seconds of clip end
+  epsilon: 0.05     # tolerance around dialogue interval edges
+  min_dur: 20       # hard minimum promo duration (seconds)
+  max_dur: 60       # hard maximum promo duration (seconds)
+
+# Prefilter / clustering
+prefilter:
+  variants_per_cluster: 3
+  clusters_per_episode: 6
+  iou_threshold: 0.5
+
+# LLM
+llm:
+  provider: mock
+  eval_model: mock
+  finalist_model: null
+  temperature: 0.0
+  max_tokens: 4096
+  max_retries: 3
+  base_url: null
+
+# Output
+top_n: 10
+min_score: 0.0
+output_dir: outputs
+input_glob: "*.txt"
