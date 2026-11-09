@@ -86,7 +86,7 @@ A **promo** is a 20–60 s clip taken from the show itself, posted on Instagram/
 | NFR-03 **Reproducibility** | Same input + config + model ⇒ same candidates, same deterministic scores; LLM calls cached on content hash, temperature 0 | Needed for evaluation and for the interview re-run |
 | NFR-04 **Free-tier friendly** | Total LLM usage for 50 episodes should be on the order of ~100–200 calls (estimate in §10.7) | Brief: free tiers are enough |
 | NFR-05 **Runs locally, simple** | `pip install` + one command; no database, queue or server | Avoid over-engineering |
-| NFR-06 **Graceful degradation** | LLM failure never loses an episode: fall back to heuristic scores with a `low_confidence` flag | A partial honest result beats a crash |
+| NFR-06 **Graceful degradation** | LLM failure triggers retries (up to 50 with exponential backoff, max 120s delay, jitter ±2s). If all retries exhaust, the pipeline raises `RuntimeError` rather than silently falling back to heuristic — no episode is silently dropped. Heuristic-only mode (`--no-llm`) remains available for running without any API key. |
 | NFR-07 **Transparency** | Every score is decomposable into components visible in the output | Brief rewards honest quality-checking over polish |
 | NFR-08 **No show-specific code** | No episode, character or plot names in source; per-show data lives in generated/edited config | New shows weekly |
 | NFR-09 **Secrets hygiene** | API keys only from environment variables / `.env` (git-ignored) | Standard security practice; explicit requirement |
@@ -313,7 +313,7 @@ characters:
 | `prompts.py` | Loads versioned prompt templates from `config/prompts/*.md`; renders compact transcripts |
 | `schemas.py` | Pydantic models for each prompt's JSON output |
 | `cache.py` | Content-hash cache + raw trace logging |
-| `retry.py` | Exponential backoff on 429/5xx, one JSON-repair retry, per-provider rate limiter |
+| `retry.py` | Exponential backoff on 429/5xx, up to 50 retries with 5s–120s delay and jitter, per-provider rate limiter |
 
 ### 8.7 Evaluation (runtime) & scoring — `scoring/`, `validation/` **[MVP]**
 
@@ -436,7 +436,7 @@ class LLMClient(Protocol):
 2. Hook/cliffhanger `event_id` must be inside the candidate's event range.
 3. Quotes must be a normalised substring of that event's text (§13.2).
 4. Named entities in descriptions must appear in the source or profile.
-5. Temperature 0; schema-validated output; invalid → one repair → fallback (never "best effort" fabrication).
+5. Temperature 0; schema-validated output; invalid → retry up to 50 times with exponential backoff (never "best effort" fabrication; never silently fall back).
 6. Candidate count per call is capped (default 15–20) to limit position bias; order is shuffled with a fixed seed so position bias is the same in every run and does not systematically favour early windows.
 
 ### 10.5 How deterministic logic and the LLM cooperate
@@ -456,8 +456,8 @@ Deterministic features act as a **sanity anchor** for each LLM dimension: when L
 |---|---|
 | No API key / provider down | **Heuristic-only mode**: LLM weights set to 0, hook/cliffhanger text generated from templates over the actual quoted lines, every promo flagged `NO_LLM` |
 | Rate limited (429) | Backoff, then slow down; cached results are never re-requested |
-| Invalid JSON / schema | One repair retry, then candidates in that batch fall back to heuristic scores and are flagged `LLM_INVALID` |
-| Ungrounded quote | That field is replaced by a verified quote chosen by code; promo flagged `UNGROUNDED_LLM_TEXT` and its LLM component down-weighted |
+| Invalid JSON / schema | Retried up to 50 times with exponential backoff (max 120s, ±2s jitter). If all retries fail: raises `RuntimeError` — no silent heuristic fallback |
+| Ungrounded quote | Retried up to 50 times with exponential backoff; if still ungrounded after all retries: raises `RuntimeError` |
 
 ### 10.7 Cost estimate (rough; verify against provider limits at build time)
 
@@ -579,7 +579,7 @@ SCORE   = 100 · base · penalty
 | `VISUAL_DEPENDENT` | hook/cliffhanger text comes mostly from `CAMERA`/`ACTION` rather than speech | Impact depends on footage the text can't show |
 | `STITCHED_JOIN` | multi-segment | Coherence of the join is judged from text only |
 | `BOUNDARY_NEAR_DIALOGUE` | cut within 0.3 s of a dialogue edge | Verify the cut is clean in video |
-| `NO_LLM` / `LLM_INVALID` / `UNGROUNDED_LLM_TEXT` / `CALIBRATION_DRIFT` | as described | Lower confidence in AI text/scores |
+| `NO_LLM` / `UNGROUNDED_LLM_TEXT` / `CALIBRATION_DRIFT` | as described | Lower confidence in AI text/scores |
 | `SPOILER_HEAVY` (optional) | reveals a late-episode twist | Policy call (A7) |
 
 ### 11.9 Deduplication and ranking

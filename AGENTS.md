@@ -39,7 +39,7 @@ The tool only **finds** promos (moments and cut points). No video editing, music
 | Item | State |
 |---|---|
 | Application code | **None.** Repository contains only `architecture.md` (and this file). Nothing is implemented. |
-| Sample data | 3 screenplay files provided by the human: `episode-001-Episode_1671703.txt`, `episode-002-Episode_1671704.txt`, `episode-003-Episode_1671705.txt`. The real pack has 50 episodes; only 3 are available locally. |
+| Sample data | 50 screenplay files provided by the human: `episode-001-Episode_1671703.txt` through `episode-050-Episode_1671752.txt`. All 50 available locally. |
 | Assignment PDF | `Kuku___AI_Generalist_Assignment.pdf` — read it if present; key facts are repeated here. |
 
 If you find existing code when you start, **inspect it first and reuse what works** (rule R4). Never overwrite working code without a reason.
@@ -328,7 +328,7 @@ Every phase has: **Purpose → Steps → Tests → Gate → Pitfalls**. Steps ar
    - Candidate order shuffled with a **fixed seed**.
    - `blind.md` receives **only** the clip events (no loglines/profile/other episodes).
 5. **Provider adapters**: `openai_compat.py` first (covers most free tiers and local models via `OPENAI_BASE_URL`), then `gemini.py`, then `anthropic.py`. Each lazy-imports its SDK, reads its key from env, uses JSON/schema mode when available, and fails with a clear message if the key or SDK is missing.
-6. `llm/factory.py`: build clients from config/env with two slots (`eval_model`, `finalist_model`); `llm/retry.py`: exponential backoff on 429/5xx, one JSON-repair retry that feeds the validation error back, and a simple rate limiter; `llm/cache.py`: JSON file cache keyed by SHA-256 of `(prompt_version, model, input)`; **write every raw request and response unedited** to `outputs/<run_id>/llm_trace/` (required deliverable: raw outputs).
+6. `llm/factory.py`: build clients from config/env with two slots (`eval_model`, `finalist_model`); `llm/retry.py`: exponential backoff on 429/5xx, up to 50 retries with 5s–120s delay and jitter, per-provider rate limiter; `llm/cache.py`: JSON file cache keyed by SHA-256 of `(prompt_version, model, input)`; **write every raw request and response unedited** to `outputs/<run_id>/llm_trace/` (required deliverable: raw outputs).
 7. `preprocess/profile.py`: one call per show → `shows/<slug>/profile.yaml` (premise + alias map; unknown aliases are `null`). Reuse an existing profile instead of regenerating; never overwrite a human-edited one without `--refresh-profile`.
 8. `validation/grounding.py` (arch §13.2) — **write and test before wiring the evaluator**:
    - `cand_id` and `event_id` must exist and lie in the candidate.
@@ -336,13 +336,13 @@ Every phase has: **Purpose → Steps → Tests → Gate → Pitfalls**. Steps ar
    - Hook event within first `hook_window` s; cliffhanger event within last `tail_window` s.
    - Capitalised names in free text must appear in the clip text, profile or loglines.
    - On failure: replace by a code-chosen verbatim quote, set flag `UNGROUNDED_LLM_TEXT`; drop only the offending field, not the whole candidate, unless the IDs themselves are invalid.
-9. `scoring/evaluator.py`: batch candidates per episode (≤ 15–20 per call), call, validate, repair once, else fall back to heuristic and flag `LLM_INVALID`. If no key: heuristic-only with `NO_LLM` (I6).
+9. `scoring/evaluator.py`: batch candidates per episode (≤ 15–20 per call), call, validate, retry up to 50 times with exponential backoff, raise `RuntimeError` if all retries exhausted; if no key: heuristic-only with `NO_LLM` (I6).
 10. Blind check for finalists (after preliminary score + dedupe, arch §9): call with the `finalist_model`; failures ⇒ keep the in-context standalone score capped at 0.75.
 
 **Tests** (`tests/test_llm_interface.py`, `tests/test_grounding.py`, `tests/test_evaluator_mock.py`, `tests/test_cache.py`)
 
 - Mock end-to-end run on the three real episodes produces a valid `promos.json`.
-- Malformed JSON ⇒ repair attempted ⇒ fallback with `LLM_INVALID`. Test each: valid, malformed, schema-invalid, empty, wrong types.
+- Malformed JSON ⇒ retry up to 50 times with exponential backoff; raises RuntimeError if all retries fail. Test each: valid, malformed, schema-invalid, empty, wrong types.
 - **Hallucination tests:** an LLM response that cites a non-existent `event_id`, a quote not in the source, a timestamp field, or an unknown `cand_id` — all are rejected/neutralised and never reach the output. Assert the output timestamps are still identical to those from the deterministic generator.
 - API errors: simulated 429 ⇒ backoff then success; persistent failure ⇒ fallback, no crash, warning recorded.
 - Cache: second identical call makes **zero** provider calls.
@@ -452,7 +452,7 @@ Every phase has: **Purpose → Steps → Tests → Gate → Pitfalls**. Steps ar
 
 ## 8. LLM usage rules (strict)
 
-1. Temperature 0; JSON-only output validated by pydantic; one repair retry max.
+1. Temperature 0; JSON-only output validated by pydantic; retries on failure (MAX_LLM_RETRIES=50 with exponential backoff, caps at 120s delay); no heuristic fallback — raises RuntimeError if all retries exhausted.
 2. The LLM sees a compact transcript with event IDs and candidates by ID. It returns IDs, scores, quotes and short text. **No timestamps, ever** (I1); if a response contains times they are ignored.
 3. The blind pass sees **only** the clip.
 4. Descriptions may not introduce names, places or events absent from the source/profile (checked by `grounding.py`).
@@ -552,7 +552,7 @@ Do not write "done" or "works" without the command output that shows it (R15).
 | 3 Preprocessing | ☑ gate passed | 2026-11-08; `pytest -q` 57 passed; Ep 1 legal starts=71/ends=74, no cuts inside dialogue intervals |
 | 4 Candidate generation (+ heuristic-only run) | ☑ gate passed | 2026-11-08; `pytest -q` 87 passed; pipeline runs end-to-end `--no-llm`, 156 promos all pass invariant I4, `promos.json` + `report.md` written to `outputs/<run_id>/` |
 | 4b Stitching (≤ 2 segments) | ☐ not started | |
-| 5 AI integration | ☑ gate passed | 2026-11-08; `pytest -q` 95 passed; mock end-to-end run produces valid promos.json (mode=llm, model=mock); grounding validator rejects unknown cand_id, out-of-window events, ungrounded quotes; heuristic fallback works with NO_LLM; OpenAI SDK installed, factory wires provider, adapters lazy-import, schemas validated; evaluator retries on LLM failure instead of heuristic fallback (MAX_LLM_RETRIES=20 with exponential backoff, raises RuntimeError if all retries exhausted) |
+| 5 AI integration | ☑ gate passed | 2026-11-08; `pytest -q` 95 passed; mock end-to-end run produces valid promos.json (mode=llm, model=mock); grounding validator rejects unknown cand_id, out-of-window events, ungrounded quotes; heuristic fallback works with NO_LLM; OpenAI SDK installed, factory wires provider, adapters lazy-import, schemas validated; evaluator retries on LLM failure instead of heuristic fallback (MAX_LLM_RETRIES=50, base delay 5s caps at 120s, jitter ±2s, raises RuntimeError if all retries exhausted) |
 | 6 Scoring and ranking | ☑ gate passed | 2026-11-08; `pytest -q` 102 passed; flags, weakest-link penalty, calibration drift implemented; invariant checker 0 errors on 156 promos |
 | 7 Output generation | ☑ gate passed | 2026-11-08; promos.json + report.md + episodes.json + run_manifest.json + candidates_debug.json written to outputs/<run_id>/ |
 | 8 Testing and evaluation | ☑ gate passed | 102 unit tests pass; eval/check_invariants.py passes (0 errors on 156 promos); gold set requires human input (not generated by agent) |
@@ -588,7 +588,7 @@ Status values: ☐ not started · ◐ in progress · ☑ gate passed.
 | Where do timestamps come from? | Parsed source events only (I1) |
 | Where can a clip legally start/end? | Dialogue-safe shot/beat boundaries (arch §11.1) |
 | What does the LLM return? | Scores, verbatim quotes, short text — by candidate/event ID |
-| What if the LLM fails? | Heuristic fallback + flag; never crash, never fabricate |
+| What if the LLM fails? | Retries up to 50 times with exponential backoff; raises error if all retries fail — never silently falls back to heuristic |
 | What if there is no API key? | `--no-llm` heuristic-only run (I6) |
 | How is the score computed? | arch §11.7, config-driven, fully decomposed in output |
 | Where are weak picks explained? | Per-promo `flags`/`weaknesses` + report "Known limitations" |
